@@ -24,7 +24,7 @@ dependencies {
     implementation 'com.github.jnr:jnr-ffi:2.2.15'
 }
 
-def targetJavaVersion = 21
+def targetJavaVersion = 20
 java {
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     sourceCompatibility = javaVersion
@@ -49,5 +49,5 @@ processResources {
     }
 }
 kotlin {
-    jvmToolchain(11)
+    jvmToolchain(20)
 }
