@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.autumnstudios.plugins.subscape.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.autumnstudios.plugins.subscape.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/subscape.iml" filepath="$PROJECT_DIR$/.idea/subscape.iml" />
+      <module fileurl="file://$PROJECT_DIR$/subscape-rust/subscape-rust.iml" filepath="$PROJECT_DIR$/subscape-rust/subscape-rust.iml" />
+    </modules>
+  </component>
+</project>
