@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.autumnstudios.plugins.subscape.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.autumnstudios.plugins.subscape.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/subscape.iml" filepath="$PROJECT_DIR$/.idea/subscape.iml" />
-      <module fileurl="file://$PROJECT_DIR$/subscape-rust/subscape-rust.iml" filepath="$PROJECT_DIR$/subscape-rust/subscape-rust.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/glass.iml" filepath="$PROJECT_DIR$/.idea/glass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/glass-rust/glass-rust.iml" filepath="$PROJECT_DIR$/glass-rust/glass-rust.iml" />
     </modules>
   </component>
 </project>
