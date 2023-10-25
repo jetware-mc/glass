@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'java-library'
+    id 'cpp-library'
     id 'org.jetbrains.kotlin.jvm' version '1.9.20-RC'
 }
 
@@ -21,7 +23,11 @@ repositories {
 dependencies {
     compileOnly "io.papermc.paper:paper-api:1.20.2-R0.1-SNAPSHOT"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    implementation 'com.github.jnr:jnr-ffi:2.2.15'
+
+
+    implementation 'org.graalvm.sdk:graal-sdk:22.3.1'
+    implementation 'org.graalvm.js:js:22.3.1'
+    implementation 'org.graalvm.js:js-scriptengine:22.3.1'
 }
 
 def targetJavaVersion = 20
@@ -37,6 +43,25 @@ java {
 tasks.withType(JavaCompile).configureEach {
     if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
         options.release = targetJavaVersion
+    }
+}
+
+tasks.register('generateJniHeaders', Exec) {
+    dependsOn compileJava
+    doFirst {
+        file('build/headers').mkdirs()
+    }
+    commandLine 'javac', '-h', 'build/headers', 'src/main/java/path/to/YourClassWithNativeMethods.java'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs 'src/main/java'
+        }
+        cpp {
+            srcDirs 'src/main/cpp'
+        }
     }
 }
 
