@@ -49,6 +49,16 @@ tasks.withType(JavaCompile).configureEach {
     }
 }
 
+sourceSets {
+    main.java.srcDirs += 'src/main/kotlin/'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'Glass'
+    }
+}
+
 
 
 processResources {

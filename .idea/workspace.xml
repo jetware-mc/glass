@@ -3,19 +3,19 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/glass-rust/Cargo.toml" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4713edd0-2aa7-475c-b863-b544f4428ac0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/glass.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/com.autumnstudios.plugins.glass-main.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="4713edd0-2aa7-475c-b863-b544f4428ac0" name="Changes" comment="please work">
+      <change afterPath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/lang/rust/GlobalRustPluginData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/lang/rust/RustPlugin.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-main/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-main/.gradle/8.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/.gradle/8.4/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-main/.gradle/8.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/.gradle/8.4/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glass-main/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/Subscape.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/Glass.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/plugins/StandardPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/plugins/StandardPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/utils/GlassUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/utils/GlassUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-main/src/main/resources/plugin.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,14 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -70,12 +78,19 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -84,11 +99,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698207626485</updated>
-      <workItem from="1698207630882" duration="130000" />
+      <workItem from="1698207630882" duration="2304000" />
     </task>
+    <task id="LOCAL-00001" summary="please work">
+      <option name="closed" value="true" />
+      <created>1698207976691</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698207976691</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="please work" />
+    <option name="LAST_COMMIT_MESSAGE" value="please work" />
   </component>
 </project>

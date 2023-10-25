@@ -1,4 +1,0 @@
-name: Subscape
-version: '${version}'
-main: com.autumnstudios.plugins.subscape.Subscape
-api-version: '1.20'
