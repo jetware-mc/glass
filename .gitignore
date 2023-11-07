@@ -37,3 +37,51 @@ Cargo.lock
 
 # MSVC Windows builds of rustc generate these, which store debugging information
 *.pdb
+
+# General
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IntelliJ IDEA / JetBrains IDEs
+.idea/
+*.iml
+
+# Gradle (Kotlin/Java modules)
+**/build/
+**/out/
+*.class
+*.jar
+*.war
+*.ear
+*.kotlin_module
+
+# Rust
+glass-rust/target/
+**/Cargo.lock
+*.rs.bk
+
+# C Modules (assuming a directory like 'glass-c' for C modules)
+glass-c/bin/
+glass-c/obj/
+glass-c/lib/
+glass-c/**/*.o
+glass-c/**/*.a
+glass-c/**/*.so
+glass-c/**/*.dylib
+glass-c/**/*.dll
+glass-c/**/*.exe
+
+# Dependency directories (if using Node.js or similar package managers)
+/node_modules/
+/jspm_packages/
+
+# OS generated files
+ehthumbs.db
+Icon?
+*.Spotlight-V100
+*.Trashes
+
+# If you use environment variables or secrets, ignore the .env file
+.env

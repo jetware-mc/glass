@@ -8,14 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4713edd0-2aa7-475c-b863-b544f4428ac0" name="Changes" comment="please work">
-      <change afterPath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/lang/rust/GlobalRustPluginData.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/lang/rust/RustPlugin.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/com.autumnstudios.plugins.glass-launcher.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/com.autumnstudios.plugins.glass-main.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/plugins/RustPlugin.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/tcp/RelayServer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glass-main/src/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-launcher/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/glass-launcher/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-main/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-main/.gradle/8.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/.gradle/8.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-main/.gradle/8.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/.gradle/8.4/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glass-main/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/Subscape.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/Glass.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/plugins/StandardPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/plugins/StandardPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/utils/GlassUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/utils/GlassUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-main/src/main/resources/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/Glass.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/Glass.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/lang/rust/GlobalRustPluginData.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-main/src/main/kotlin/com/autumnstudios/plugins/glass/lang/rust/RustPlugin.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +74,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2XEwcKAIWHCEfs4GX9h4StJhdhY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -85,6 +100,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "ruby.rails.projectView.checked": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -100,6 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698207626485</updated>
       <workItem from="1698207630882" duration="2304000" />
+      <workItem from="1699381564384" duration="6245000" />
     </task>
     <task id="LOCAL-00001" summary="please work">
       <option name="closed" value="true" />
