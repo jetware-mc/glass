@@ -1,3 +1,0 @@
-name: Glass
-main: com.autumnstudios.plugins.glass.Glass
-version: '${VERSION}'
