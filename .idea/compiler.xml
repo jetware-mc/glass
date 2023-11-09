@@ -3,7 +3,6 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="com.autumnstudios.plugins.glass-main" target="20" />
-      <module name="com.autumnstudios.plugins.glass-main.main" target="20" />
       <module name="com.autumnstudios.plugins.glass-main.test" target="20" />
     </bytecodeTargetLevel>
   </component>
