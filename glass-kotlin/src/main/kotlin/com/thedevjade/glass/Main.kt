@@ -1,4 +1,4 @@
-/*
+package com.thedevjade.glass/*
  * Copyright (c) 2023. Made by theDevJade or contributors.
  */
 
