@@ -14,7 +14,7 @@ categories = ["rust-patterns", "wasm"]
 publish = false
 
 [lib]
-crate-type = ["cdylib", "rlib"]
+crate-type = ["cdylib"]
 
 [features]
 default = []
