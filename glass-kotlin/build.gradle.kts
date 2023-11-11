@@ -26,6 +26,13 @@ tasks.test {
     useJUnitPlatform()
 }
 
+sourceSets {
+    main {
+        java {
+            srcDir("src/main/kotlin")
+        }
+    }
+}
 
 
 kotlin {
@@ -33,5 +40,5 @@ kotlin {
 }
 
 application {
-    mainClass.set("com.thedevjade.glass.MainKt")
+    mainClass.set("MainKt")
 }
