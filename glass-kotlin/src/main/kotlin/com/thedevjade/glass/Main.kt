@@ -26,7 +26,7 @@ fun main(args: Array<String>) = mainBody {
         rootLogger.handlers.forEach { h -> h.level = Level.ALL }
     }
 
-    downloadFile(URL("w"), File(wasmFilePath));
+    downloadFile(URL("https://github.com/theDevJade/glass/raw/master/binaries/rust/rust_bg.wasm"), File(wasmFilePath));
 
 
     println("Initializing..")
@@ -52,12 +52,6 @@ class MyArgs(parser: ArgParser) {
     val debug by parser.flagging(
         "-d", "--debug",
         help = "debug mode"
-    )
-
-
-    val rustBinary by parser.storing(
-        "--rust-binary",
-        help = "rust binary"
     )
 
 

@@ -19,7 +19,7 @@ dependencies {
     implementation("io.github.kawamuray.wasmtime:wasmtime-java:0.19.0")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.10")
     implementation("com.github.kittinunf.fuel:fuel:3.0.0-alpha1")
-    compileOnly("com.xenomachina:kotlin-argparser:2.0.7")
+    implementation("com.xenomachina:kotlin-argparser:2.0.7")
 }
 
 tasks.test {
@@ -40,5 +40,5 @@ kotlin {
 }
 
 application {
-    mainClass.set("MainKt")
+    mainClass.set("com.thedevjade.glass.MainKt")
 }

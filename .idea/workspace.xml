@@ -8,21 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3be1dbc-3e8c-44ad-b068-5ba8eadd0805" name="Changes" comment="Welp">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/build_binary.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glass-kotlin/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/WebAssembly.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/Bindings.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/Bindings.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-rust/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-rust/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-rust/README_WEB.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-rust/glass-rust.iml" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/glass-rust.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-rust/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +160,7 @@
       <recent name="$PROJECT_DIR$/glass-kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="wasm-pack.build-binary">
+  <component name="RunManager" selected="Gradle.glass-kotlin [run]">
     <configuration name="glass-kotlin [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -254,7 +242,7 @@
       <workItem from="1699740833487" duration="6625000" />
       <workItem from="1699748748034" duration="1157000" />
       <workItem from="1699749926611" duration="402000" />
-      <workItem from="1699750351480" duration="1160000" />
+      <workItem from="1699750351480" duration="1601000" />
     </task>
     <task id="LOCAL-00001" summary="This gradle configuration is amazing :D">
       <option name="closed" value="true" />
@@ -296,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699741906528</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Welp">
+      <option name="closed" value="true" />
+      <created>1699751731016</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699751731016</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
