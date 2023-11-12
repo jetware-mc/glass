@@ -43,29 +43,58 @@ object WebAssembly {
                     store.engine().use { engine ->
                         Linker(engine).use { linker ->
                             WasiCtx.addToLinker(linker)
-                            Module.fromFile(engine, pathToBinary.absolutePath).use { module ->
-                                val wasmCtx = WasmContext(pathToBinary, store, bindings)
-                                for (function in functions) {
-                                    linker.define(store, "kotlin_module", function.name, function.extern(wasmCtx))
-                                }
-
-                                linker.module(store, "", module)
-
-                                linker.get(store, "", "run").get().func().use { f ->
-                                    val fn: Consumer0 = WasmFunctions.consumer(store, f)
-                                    fn.accept()
-                                }
-
-                                // cleanup
-                                linker.externsOfModule(store, "kotlin_module").forEach {
-                                    if (it.extern().type() === Extern.Type.FUNC) {
-                                        it.extern().func().close()
-                                    }
-                                }
-                            }
+                            declareModule(engine, linker, store, pathToBinary, bindings, functions)
                         }
                     }
                 }
+            }
+        }
+    }
+
+    @OptIn(DelicateCoroutinesApi::class)
+    private fun launchEnvironmentMultiFile(functions: List<KFunction<*>>, bindings: Any, vararg binaries: File) {
+        GlobalScope.launch {
+            WasiCtxBuilder().build().use { ctx ->
+                Store.withoutData(ctx).use { store ->
+                    store.engine().use { engine ->
+                        Linker(engine).use { linker ->
+                            WasiCtx.addToLinker(linker)
+                            for (binary in binaries) {
+                                declareModule(engine, linker, store, binary, bindings, functions)
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private fun declareModule(
+        engine: Engine,
+        linker: Linker,
+        store: Store<Void>,
+        binary: File,
+        bindings: Any,
+        functions: List<KFunction<*>>
+    ) {
+        val module = Module.fromFile(engine, binary.absolutePath)
+        val wasmCtx = WasmContext(binary, store, bindings)
+        for (function in functions) {
+            linker.define(store, "kotlin_module", function.name, function.extern(wasmCtx))
+        }
+
+        linker.module(store, "", module)
+
+        linker.get(store, "", "run").get().func().use { f ->
+            val fn: Consumer0 = WasmFunctions.consumer(store, f)
+            fn.accept()
+        }
+
+        // cleanup
+        linker.externsOfModule(store, "kotlin_module").forEach {
+            if (it.extern().type() === Extern.Type.FUNC) {
+                it.extern().func().close()
             }
         }
     }

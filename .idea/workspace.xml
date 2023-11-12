@@ -7,24 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/glass-rust/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3be1dbc-3e8c-44ad-b068-5ba8eadd0805" name="Changes" comment="Added spigot libs">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/glass-kotlin.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/glass-kotlin.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/loader/GlassBinaries.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/loader/GlassLoader.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/util/UtilC.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glass-kotlin/src/main/resources/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glass-kotlin/src/main/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-kotlin/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/Glass.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/WebAssembly.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/WebAssembly.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/glass-launcher/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" afterDir="false" />
-    </list>
+    <list default="true" id="f3be1dbc-3e8c-44ad-b068-5ba8eadd0805" name="Changes" comment="Added spigot libs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,7 +156,36 @@
       <recent name="$PROJECT_DIR$/glass-kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.glass-kotlin [run]">
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
+      <list>
+        <option value="$PROJECT_DIR$/glass-launcher" />
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="wasm-pack.build-binary">
+    <configuration name="glass-kotlin [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/glass-kotlin" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="glass-kotlin [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -226,6 +238,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.glass-kotlin [assemble]" />
       <item itemvalue="Gradle.glass-kotlin [jar]" />
       <item itemvalue="Gradle.glass-kotlin [run]" />
       <item itemvalue="Kotlin.MainKt" />
@@ -233,6 +246,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.glass-kotlin [assemble]" />
         <item itemvalue="Gradle.glass-kotlin [run]" />
       </list>
     </recent_temporary>
@@ -257,7 +271,7 @@
       <workItem from="1699749926611" duration="402000" />
       <workItem from="1699750351480" duration="1674000" />
       <workItem from="1699754450036" duration="958000" />
-      <workItem from="1699809002201" duration="4967000" />
+      <workItem from="1699809002201" duration="5253000" />
     </task>
     <task id="LOCAL-00001" summary="This gradle configuration is amazing :D">
       <option name="closed" value="true" />
@@ -315,7 +329,47 @@
       <option name="project" value="LOCAL" />
       <updated>1699752024707</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added spigot libs">
+      <option name="closed" value="true" />
+      <created>1699814054774</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699814054774</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added spigot libs">
+      <option name="closed" value="true" />
+      <created>1699814134633</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699814134633</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added spigot libs">
+      <option name="closed" value="true" />
+      <created>1699814206470</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699814206470</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added spigot libs">
+      <option name="closed" value="true" />
+      <created>1699814294230</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699814294230</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added spigot libs">
+      <option name="closed" value="true" />
+      <created>1699814322072</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699814322072</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
