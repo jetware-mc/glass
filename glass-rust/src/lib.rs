@@ -1,15 +1,13 @@
-use wasm_bindgen::prelude::wasm_bindgen;
+#![allow(dead_code)]
 
-#[link(wasm_import_module = "kotlin_module")]
-#[wasm_bindgen]
-extern "C" {
-    fn method1();
-}
+use crate::logging::print_str;
 
+pub mod externs;
 
-#[wasm_bindgen]
-pub fn run() {
-    unsafe {
-        method1(); // Call the Kotlin function
-    }
+// ** Public Modules **
+pub mod logging;
+
+#[no_mangle]
+pub extern "C" fn run() {
+    print_str("Hello, World");
 }

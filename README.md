@@ -10,3 +10,11 @@ The GLASS library will provide ways for other languages to communicate with the 
 
 # Add me on discord if you want to contribute!
 aBallOfNewsies
+
+# Documentation
+
+In order to build the rust module, you need
+**wasm-pack**
+The command to build is
+`wasm-pack glass-rust build --target web --out-name rust --out-dir ../binaries/rust`
+If you are committing, please make sure to commit the binaries folder

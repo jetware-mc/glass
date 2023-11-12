@@ -1,13 +1,13 @@
 [package]
-name = "rust-template"
+name = "glass-rust"
 version = "0.1.0"
-authors = ["zaszi <admin@zaszi.net>"]
+authors = ["theJadeDev", "contributors"]
 edition = "2021"
-description = "A project template for Rust, helping to structure your projects according to best practices."
-documentation = "https://github.com/zaszi/rust-template"
+description = "Code a Spigot Plugin in Rust!"
+documentation = "https://github.com/theDevJade/glass"
 readme = "README.md"
-homepage = "https://github.com/zaszi/rust-template"
-repository = "https://github.com/zaszi/rust-template"
+homepage = "https://github.com/theDevJade/glass#"
+repository = "https://github.com/theDevJade/glass"
 license-file = "LICENSE"
 keywords = ["template", "wasm"]
 categories = ["rust-patterns", "wasm"]
