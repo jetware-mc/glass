@@ -7,10 +7,23 @@
     <cargoProject FILE="$PROJECT_DIR$/glass-rust/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3be1dbc-3e8c-44ad-b068-5ba8eadd0805" name="Changes" comment="Welp">
+    <list default="true" id="f3be1dbc-3e8c-44ad-b068-5ba8eadd0805" name="Changes" comment="Added spigot libs">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/glass-kotlin.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/glass-kotlin.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/loader/GlassBinaries.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/loader/GlassLoader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/util/UtilC.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glass-kotlin/src/main/resources/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glass-kotlin/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glass-kotlin/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/Glass.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/WebAssembly.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/WebAssembly.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-launcher/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/glass-launcher/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +56,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Object" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
@@ -242,7 +255,9 @@
       <workItem from="1699740833487" duration="6625000" />
       <workItem from="1699748748034" duration="1157000" />
       <workItem from="1699749926611" duration="402000" />
-      <workItem from="1699750351480" duration="1601000" />
+      <workItem from="1699750351480" duration="1674000" />
+      <workItem from="1699754450036" duration="958000" />
+      <workItem from="1699809002201" duration="4967000" />
     </task>
     <task id="LOCAL-00001" summary="This gradle configuration is amazing :D">
       <option name="closed" value="true" />
@@ -292,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699751731016</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Yay?">
+      <option name="closed" value="true" />
+      <created>1699752024707</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699752024707</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +335,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="This gradle configuration is amazing :D" />
     <MESSAGE value="Welp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Welp" />
+    <MESSAGE value="Yay?" />
+    <MESSAGE value="Added spigot libs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added spigot libs" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -8,37 +8,59 @@ import io.github.kawamuray.wasmtime.*
 import io.github.kawamuray.wasmtime.WasmFunctions.Consumer0
 import io.github.kawamuray.wasmtime.wasi.WasiCtx
 import io.github.kawamuray.wasmtime.wasi.WasiCtxBuilder
+import kotlinx.coroutines.DelicateCoroutinesApi
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import java.io.File
 import kotlin.reflect.KFunction
 import kotlin.reflect.full.memberFunctions
+import kotlin.system.measureTimeMillis
 
 object WebAssembly {
 
     fun runEnvironment(pathToBinary: File, bindings: Any) {
-        val functions: List<KFunction<*>> = getMethodsFromKObject(bindings::class.java)
+        println("Initializing..")
+        val functions: List<KFunction<*>>?;
+        measureTimeMillis {
+            functions = getMethodsFromKObject(bindings::class.java)
+        }.also {
+            println("Initialized bindings in $it ms")
+        }
 
-        WasiCtxBuilder().build().use { ctx ->
-            Store.withoutData(ctx).use { store ->
-                store.engine().use { engine ->
-                    Linker(engine).use { linker ->
-                        WasiCtx.addToLinker(linker)
-                        Module.fromFile(engine, pathToBinary.absolutePath).use { module ->
-                            val wasmCtx = WasmContext(pathToBinary, store, bindings)
-                            for (function in functions) {
-                                linker.define(store, "kotlin_module", function.name, function.extern(wasmCtx))
-                            }
+        println("Running WebAssembly Rust binary")
+        measureTimeMillis {
+            launchEnvironment(functions!!, pathToBinary, bindings)
+        }.also {
+            println("Finished running binary in $it ms")
+        }
+    }
 
-                            linker.module(store, "", module)
+    @OptIn(DelicateCoroutinesApi::class)
+    private fun launchEnvironment(functions: List<KFunction<*>>, pathToBinary: File, bindings: Any) {
+        GlobalScope.launch {
+            WasiCtxBuilder().build().use { ctx ->
+                Store.withoutData(ctx).use { store ->
+                    store.engine().use { engine ->
+                        Linker(engine).use { linker ->
+                            WasiCtx.addToLinker(linker)
+                            Module.fromFile(engine, pathToBinary.absolutePath).use { module ->
+                                val wasmCtx = WasmContext(pathToBinary, store, bindings)
+                                for (function in functions) {
+                                    linker.define(store, "kotlin_module", function.name, function.extern(wasmCtx))
+                                }
 
-                            linker.get(store, "", "run").get().func().use { f ->
-                                val fn: Consumer0 = WasmFunctions.consumer(store, f)
-                                fn.accept()
-                            }
+                                linker.module(store, "", module)
 
-                            // cleanup
-                            linker.externsOfModule(store, "kotlin_module").forEach {
-                                if (it.extern().type() === Extern.Type.FUNC) {
-                                    it.extern().func().close()
+                                linker.get(store, "", "run").get().func().use { f ->
+                                    val fn: Consumer0 = WasmFunctions.consumer(store, f)
+                                    fn.accept()
+                                }
+
+                                // cleanup
+                                linker.externsOfModule(store, "kotlin_module").forEach {
+                                    if (it.extern().type() === Extern.Type.FUNC) {
+                                        it.extern().func().close()
+                                    }
                                 }
                             }
                         }
