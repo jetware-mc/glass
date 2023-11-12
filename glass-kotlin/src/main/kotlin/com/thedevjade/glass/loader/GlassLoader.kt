@@ -26,14 +26,10 @@ class GlassLoader(private val main: Glass) {
         UtilC.downloadFile(
             URL(GlassBinaries.rust().url),
             GlassBinaries.rust().file
-        );
-
+        )
 
         println("Initializing..")
 
-
-
         WebAssembly.runEnvironment(GlassBinaries.rust().file, Bindings)
-
     }
 }

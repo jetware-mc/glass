@@ -20,7 +20,7 @@ object WebAssembly {
 
     fun runEnvironment(pathToBinary: File, bindings: Any) {
         println("Initializing..")
-        val functions: List<KFunction<*>>?;
+        val functions: List<KFunction<*>>?
         measureTimeMillis {
             functions = getMethodsFromKObject(bindings::class.java)
         }.also {
@@ -75,5 +75,4 @@ object WebAssembly {
             .filterNot { it.name in setOf("equals", "hashCode", "toString") }
             .map { it }
     }
-
 }

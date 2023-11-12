@@ -18,7 +18,6 @@ java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(17))
 }
 
-
 repositories {
     mavenCentral()
     maven("https://repo.dmulloy2.net/repository/public/")
@@ -26,7 +25,6 @@ repositories {
 
 dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test:1.8.10")
-
 
     implementation("io.github.kawamuray.wasmtime:wasmtime-java:0.19.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
@@ -51,7 +49,6 @@ dependencies {
     implementation("com.comphenix.protocol:ProtocolLib:5.1.0")
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10")
-
 }
 
 tasks {
@@ -86,7 +83,6 @@ tasks {
     }
 
     reobfJar {
-        dependsOn("ktlintFormat")
         outputJar.set(layout.buildDirectory.file("libs/$projectName-${project.version}.jar"))
     }
 }
@@ -98,7 +94,6 @@ sourceSets {
         }
     }
 }
-
 
 kotlin {
     jvmToolchain(17)
