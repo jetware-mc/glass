@@ -11,6 +11,7 @@ class Glass : JavaPlugin() {
         GlassLoader(this).load()
     }
 
+    @Suppress("RedundantOverride")
     override fun onDisable() {
         super.onDisable()
     }
