@@ -1,36 +1,29 @@
 /* tslint:disable */
-
 /* eslint-disable */
 /**
  * @param {string} str
  */
 export function print_string(str: string): void;
-
 /**
  * @param {string} str
  */
 export function print_str(str: string): void;
-
 /**
  * @param {number} i
  */
 export function print_int(i: number): void;
-
 /**
  * @param {bigint} l
  */
 export function print_long(l: bigint): void;
-
 /**
  * @param {number} s
  */
 export function print_short(s: number): void;
-
 /**
  * @param {number} f
  */
 export function print_float(f: number): void;
-
 /**
  * @param {number} d
  */
@@ -53,7 +46,6 @@ export interface InitOutput {
 }
 
 export type SyncInitInput = BufferSource | WebAssembly.Module;
-
 /**
  * Instantiates the given `module`, which can either be bytes or
  * a precompiled `WebAssembly.Module`.

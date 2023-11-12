@@ -69,7 +69,6 @@ function passStringToWasm0(arg, malloc, realloc) {
     WASM_VECTOR_LEN = offset;
     return ptr;
 }
-
 /**
  * @param {string} str
  */
