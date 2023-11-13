@@ -3,6 +3,7 @@ plugins {
     id("io.papermc.paperweight.userdev") version "1.5.5"
     id("xyz.jpenilla.run-paper") version "2.2.0"
     id("org.jlleitschuh.gradle.ktlint") version "11.6.1"
+    id("com.github.johnrengelman.shadow") version "7.1.2"
     kotlin("plugin.serialization") version "1.9.0"
     kotlin("jvm") version "1.9.20"
     application

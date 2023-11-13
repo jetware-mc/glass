@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/glass.iml" filepath="$PROJECT_DIR$/.idea/glass.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/glass-kotlin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/glass-kotlin.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/glass-kotlin.test.iml" filepath="$PROJECT_DIR$/.idea/modules/glass-kotlin.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/glass-launcher.main.iml" filepath="$PROJECT_DIR$/.idea/modules/glass-launcher.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/glass-rust/glass-rust.iml" filepath="$PROJECT_DIR$/glass-rust/glass-rust.iml" />
     </modules>
   </component>

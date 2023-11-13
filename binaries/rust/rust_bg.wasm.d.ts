@@ -1,7 +1,10 @@
 /* tslint:disable */
 /* eslint-disable */
 export const memory: WebAssembly.Memory;
-export function run(): void;
+
+export function on_enable(): void;
+
+export function on_disable(): void;
 export function print_string(a: number, b: number): void;
 export function print_str(a: number, b: number): void;
 export function print_int(a: number): void;

@@ -33,7 +33,8 @@ export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembl
 
 export interface InitOutput {
     readonly memory: WebAssembly.Memory;
-    readonly run: () => void;
+    readonly on_enable: () => void;
+    readonly on_disable: () => void;
     readonly print_string: (a: number, b: number) => void;
     readonly print_str: (a: number, b: number) => void;
     readonly print_int: (a: number) => void;

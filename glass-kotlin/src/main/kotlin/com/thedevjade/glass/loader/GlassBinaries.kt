@@ -9,7 +9,7 @@ import java.io.File
 
 object GlassBinaries {
     fun rust(): GlassBinary {
-        val file = File(UtilC.glass().dataFolder, "/binaries/glass_rust_bg.wasm")
+        val file = File(UtilC.glass().dataFolder, "shards/glass_rust_bg.wasm")
         val url = "https://github.com/theDevJade/glass/raw/master/binaries/rust/rust_bg.wasm"
         return GlassBinary(file, url)
     }

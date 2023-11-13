@@ -12,15 +12,6 @@
           </set>
         </option>
       </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/glass-launcher" />
-        <option name="gradleJvm" value="19" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/glass-launcher" />
-          </set>
-        </option>
-      </GradleProjectSettings>
     </option>
   </component>
 </project>

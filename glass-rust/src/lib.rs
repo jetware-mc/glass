@@ -8,6 +8,11 @@ pub mod externs;
 pub mod logging;
 
 #[no_mangle]
-pub extern "C" fn run() {
+pub extern "C" fn on_enable() {
     print_str("Hello, World");
+}
+
+#[no_mangle]
+pub extern "C" fn on_disable() {
+    print_str("Goodbye, World");
 }
