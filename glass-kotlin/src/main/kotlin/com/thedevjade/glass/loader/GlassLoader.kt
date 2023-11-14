@@ -45,7 +45,7 @@ class GlassLoader(private val main: Glass) {
             println("Found plugin $file")
         }
 
-        list.add(GlassBinaries.rust().file)
+
 
         println("Initializing..")
 

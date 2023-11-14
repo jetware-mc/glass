@@ -8,45 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3be1dbc-3e8c-44ad-b068-5ba8eadd0805" name="Changes" comment="Expanded code usage">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/glass-kotlin.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/glass-kotlin.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/glass-kotlin.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/glass-kotlin.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/glass-launcher.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-kotlin/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/Glass.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/Glass.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/loader/GlassBinaries.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/loader/GlassBinaries.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/loader/GlassLoader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/loader/GlassLoader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/WebAssembly.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/WebAssembly.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/.gradle/8.4/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/.gradle/8.4/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/.gradle/8.4/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/.gradle/8.4/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/glass-launcher.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/src/main/kotlin/com/autumnstudios/plugins/glass/Subscape.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/src/main/kotlin/com/autumnstudios/plugins/glass/Substorage.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/src/main/kotlin/com/autumnstudios/plugins/glass/plugins/StandardPlugin.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/src/main/kotlin/com/autumnstudios/plugins/glass/plugins/registry/GlassPlugin.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/src/main/kotlin/com/autumnstudios/plugins/glass/plugins/registry/GlassPluginInfo.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/src/main/kotlin/com/autumnstudios/plugins/glass/plugins/registry/GlassPluginRegistry.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/src/main/kotlin/com/autumnstudios/plugins/glass/plugins/startup/GlassPluginRuntime.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/src/main/kotlin/com/autumnstudios/plugins/glass/utils/GlassUtils.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-launcher/src/main/resources/plugin.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-rust/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,31 +125,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "V_FMT": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/jade/Developer/Projects/IDEA/glass/glass-kotlin/binaries",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "show.migrate.to.gradle.popup": "false",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;V_FMT&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jade/Developer/Projects/IDEA/glass/glass-kotlin/binaries&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/glass-kotlin/binaries" />
@@ -330,7 +293,9 @@
       <workItem from="1699754450036" duration="958000" />
       <workItem from="1699809002201" duration="5253000" />
       <workItem from="1699827555528" duration="4146000" />
-      <workItem from="1699840148647" duration="1432000" />
+      <workItem from="1699840148647" duration="1900000" />
+      <workItem from="1699927842884" duration="125000" />
+      <workItem from="1699936293761" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="This gradle configuration is amazing :D">
       <option name="closed" value="true" />
@@ -436,7 +401,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699828280314</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Expanded code usage">
+      <option name="closed" value="true" />
+      <created>1699841774617</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699841774617</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
