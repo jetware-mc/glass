@@ -7,8 +7,15 @@
     <cargoProject FILE="$PROJECT_DIR$/glass-rust/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3be1dbc-3e8c-44ad-b068-5ba8eadd0805" name="Changes" comment="Expanded code usage">
+    <list default="true" id="f3be1dbc-3e8c-44ad-b068-5ba8eadd0805" name="Changes" comment="Fixed duplicate">
+      <change afterPath="$PROJECT_DIR$/glass-rust/src/gmacros/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/glass-rust/src/gtraits/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/Bindings.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/Bindings.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/WebAssembly.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/WebAssembly.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-rust/src/externs/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/src/externs/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-rust/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-rust/src/logging/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/src/logging/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +51,7 @@
       <list>
         <option value="Kotlin Class" />
         <option value="Kotlin Object" />
+        <option value="Rust File" />
       </list>
     </option>
   </component>
@@ -295,7 +303,9 @@
       <workItem from="1699827555528" duration="4146000" />
       <workItem from="1699840148647" duration="1900000" />
       <workItem from="1699927842884" duration="125000" />
-      <workItem from="1699936293761" duration="47000" />
+      <workItem from="1699936293761" duration="321000" />
+      <workItem from="1700109654725" duration="7000" />
+      <workItem from="1700256305695" duration="4748000" />
     </task>
     <task id="LOCAL-00001" summary="This gradle configuration is amazing :D">
       <option name="closed" value="true" />
@@ -409,7 +419,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699841774617</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fixed duplicate">
+      <option name="closed" value="true" />
+      <created>1699936567878</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699936567878</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +450,8 @@
     <MESSAGE value="Yay?" />
     <MESSAGE value="Added spigot libs" />
     <MESSAGE value="Expanded code usage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Expanded code usage" />
+    <MESSAGE value="Fixed duplicate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed duplicate" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -30,4 +30,8 @@ object Bindings {
     fun printDouble(ctx: WasmContext, double: Double) {
         println("${ctx.wasmFile} : $double")
     }
+
+    fun register_details_unsafe(ctx: WasmContext, plugin: String) {
+        println(plugin)
+    }
 }

@@ -76,6 +76,11 @@ object WebAssembly {
             val fn: Consumer0 = WasmFunctions.consumer(store, f)
             fn.accept()
         }
+
+        linker.get(store, binary.name, "get_plugin_name_external").get().func().use { f ->
+            val fn: WasmFunctions.Consumer0 = WasmFunctions.consumer(store, f)
+            fn.accept()
+        }
     }
 
     private fun declareBindings(binary: File, bindings: Any, functions: List<KFunction<*>>) {

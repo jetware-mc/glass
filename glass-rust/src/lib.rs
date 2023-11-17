@@ -1,18 +1,22 @@
 #![allow(dead_code)]
 
-use crate::logging::print_str;
+use crate::gtraits::GlassPrint;
 
 pub mod externs;
 
 // ** Public Modules **
 pub mod logging;
+pub mod gmacros;
+pub mod gtraits;
 
-#[no_mangle]
-pub extern "C" fn on_enable() {
-    print_str("Hello, World");
-}
+plugin_name!("sample");
 
-#[no_mangle]
-pub extern "C" fn on_disable() {
-    print_str("Goodbye, World");
-}
+
+on_enable!({
+    "Hello, World!".gprint();
+    register_plugin()
+});
+
+on_disable!({
+    "Goodbye, World!".gprint();
+});
