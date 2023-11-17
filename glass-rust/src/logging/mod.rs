@@ -11,9 +11,7 @@ pub fn print_string(str: String) {
 
 #[wasm_bindgen]
 pub fn print_str(str: &str) {
-    unsafe {
-        print_string(str.to_string());
-    }
+    print_string(str.to_string());
 }
 
 #[wasm_bindgen]

@@ -3,6 +3,11 @@
 /**
  * @param {string} str
  */
+export function return_details(str: string): void;
+
+/**
+ * @param {string} str
+ */
 export function print_string(str: string): void;
 /**
  * @param {string} str
@@ -29,12 +34,15 @@ export function print_float(f: number): void;
  */
 export function print_double(d: number): void;
 
+/**
+ */
+export function register_plugin(): void;
+
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
     readonly memory: WebAssembly.Memory;
-    readonly on_enable: () => void;
-    readonly on_disable: () => void;
+    readonly return_details: (a: number, b: number) => void;
     readonly print_string: (a: number, b: number) => void;
     readonly print_str: (a: number, b: number) => void;
     readonly print_int: (a: number) => void;
@@ -42,6 +50,9 @@ export interface InitOutput {
     readonly print_short: (a: number) => void;
     readonly print_float: (a: number) => void;
     readonly print_double: (a: number) => void;
+    readonly on_enable: () => void;
+    readonly on_disable: () => void;
+    readonly register_plugin: () => void;
     readonly __wbindgen_malloc: (a: number, b: number) => number;
     readonly __wbindgen_realloc: (a: number, b: number, c: number, d: number) => number;
 }

@@ -1,4 +1,5 @@
-import * as __wbg_star0 from 'kotlin_module';
+import * as __wbg_star0 from 'env';
+import * as __wbg_star1 from 'kotlin_module';
 
 let wasm;
 
@@ -69,6 +70,16 @@ function passStringToWasm0(arg, malloc, realloc) {
     WASM_VECTOR_LEN = offset;
     return ptr;
 }
+
+/**
+ * @param {string} str
+ */
+export function return_details(str) {
+    const ptr0 = passStringToWasm0(str, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
+    const len0 = WASM_VECTOR_LEN;
+    wasm.return_details(ptr0, len0);
+}
+
 /**
  * @param {string} str
  */
@@ -122,6 +133,12 @@ export function print_double(d) {
     wasm.print_double(d);
 }
 
+/**
+ */
+export function register_plugin() {
+    wasm.register_plugin();
+}
+
 async function __wbg_load(module, imports) {
     if (typeof Response === 'function' && module instanceof Response) {
         if (typeof WebAssembly.instantiateStreaming === 'function') {
@@ -156,7 +173,8 @@ async function __wbg_load(module, imports) {
 function __wbg_get_imports() {
     const imports = {};
     imports.wbg = {};
-    imports['kotlin_module'] = __wbg_star0;
+    imports['env'] = __wbg_star0;
+    imports['kotlin_module'] = __wbg_star1;
 
     return imports;
 }

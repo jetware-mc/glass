@@ -56,22 +56,13 @@ macro_rules! static_var {
 #[macro_export]
 macro_rules! plugin_name {
     ($name:expr) => {
-        static plugin_name: String = $name;
+        use crate::externs::return_details;
+        use wasm_bindgen::prelude::wasm_bindgen;
 
-        #[no_mangle]
-        pub extern "C" fn register_plugin() {
+        #[wasm_bindgen]
+        pub fn register_plugin() {
+            let plugin_name: String = $name.to_string();
             return_details(plugin_name)
-        }
-    };
-}
-
-#[macro_export]
-macro_rules! e_binding_section {
-    ($body:expr) => {
-        #[link(wasm_import_module = "kotlin_module")]
-        #[allow(non_snake_case, dead_code, unused)]
-        extern "C" {
-            $body
         }
     };
 }

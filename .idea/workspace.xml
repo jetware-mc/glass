@@ -7,14 +7,15 @@
     <cargoProject FILE="$PROJECT_DIR$/glass-rust/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3be1dbc-3e8c-44ad-b068-5ba8eadd0805" name="Changes" comment="Fixed duplicate">
-      <change afterPath="$PROJECT_DIR$/glass-rust/src/gmacros/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glass-rust/src/gtraits/mod.rs" afterDir="false" />
+    <list default="true" id="f3be1dbc-3e8c-44ad-b068-5ba8eadd0805" name="Changes" comment="Added plugin registering and macros, attempting to fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/Bindings.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/Bindings.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binaries/rust/rust.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/binaries/rust/rust.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binaries/rust/rust.js" beforeDir="false" afterPath="$PROJECT_DIR$/binaries/rust/rust.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binaries/rust/rust_bg.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/binaries/rust/rust_bg.wasm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binaries/rust/rust_bg.wasm.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/binaries/rust/rust_bg.wasm.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/WebAssembly.kt" beforeDir="false" afterPath="$PROJECT_DIR$/glass-kotlin/src/main/kotlin/com/thedevjade/glass/wasm/WebAssembly.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glass-rust/src/externs/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/src/externs/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glass-rust/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glass-rust/src/gmacros/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/src/gmacros/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glass-rust/src/logging/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/src/logging/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/glass-rust/target/.rustc_info.json" afterDir="false" />
     </list>
@@ -133,33 +134,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;V_FMT&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jade/Developer/Projects/IDEA/glass/glass-kotlin/binaries&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "V_FMT": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/jade/Developer/Projects/IDEA/glass/glass-kotlin/run/plugins/glass-kotlin/shards",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "ruby.rails.projectView.checked": "true",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "show.migrate.to.gradle.popup": "false",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/glass-kotlin/run/plugins/glass-kotlin/shards" />
       <recent name="$PROJECT_DIR$/glass-kotlin/binaries" />
       <recent name="$PROJECT_DIR$/binaries" />
     </key>
@@ -305,7 +307,7 @@
       <workItem from="1699927842884" duration="125000" />
       <workItem from="1699936293761" duration="321000" />
       <workItem from="1700109654725" duration="7000" />
-      <workItem from="1700256305695" duration="4748000" />
+      <workItem from="1700256305695" duration="6228000" />
     </task>
     <task id="LOCAL-00001" summary="This gradle configuration is amazing :D">
       <option name="closed" value="true" />
@@ -427,7 +429,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699936567878</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added plugin registering and macros">
+      <option name="closed" value="true" />
+      <created>1700261383576</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1700261383576</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +461,9 @@
     <MESSAGE value="Added spigot libs" />
     <MESSAGE value="Expanded code usage" />
     <MESSAGE value="Fixed duplicate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed duplicate" />
+    <MESSAGE value="Added plugin registering and macros" />
+    <MESSAGE value="Added plugin registering and macros, attempting to fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added plugin registering and macros, attempting to fix" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
