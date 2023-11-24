@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "type": "command",
+            "name": "Cargo Install Depends",
+            "program": "yarn",
+            "args": [
+                "global add wasm-pack"
+            ],
+        },
+
+        {
+            "type": "command",
+            "name": "Install Yarn",
+            "dependsOn": [
+                "NPM Corepack"
+            ],
+            "program": "corepack",
+            "args": [
+                "enable"
+            ],
+        },
+        {
+            "type": "command",
+            "name": "NPM Corepack",
+            "program": "npm",
+            "args": [
+                "install -g corepack"
+            ],
+        },
+
+
+
+        {
+            "type": "cargo",
+            "name": "Cargo package",
+            "cargoExtraArgs": [
+                "-Zscript"
+            ],
+            "cargoArgs": [
+                "wasm-pack glass-rust build --target web --out-name rust --out-dir ../binaries/rust"
+            ],
+        },
+
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "gradle",
+            "name": "Build",
+            "tasks": [
+                "assemble"
+            ],
+        },
+
+    ]
+}
