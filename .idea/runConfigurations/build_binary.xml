@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="build-binary" type="WasmPackCommandRunConfiguration" factoryName="wasm-pack">
-    <option name="command" value="build glass-rust --target web --out-name rust --out-dir ../binaries/rust" />
-    <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-    <option name="emulateTerminal" value="true" />
-    <method v="2" />
-  </configuration>
-</component>
