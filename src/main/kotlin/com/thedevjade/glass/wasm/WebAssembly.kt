@@ -20,8 +20,16 @@ object WebAssembly {
 
     private lateinit var linker: Linker
     private lateinit var store: Store<Void>
+    var modules = mutableListOf<File>()
 
     private val plugins: MutableMap<Module, String> = mutableMapOf()
+
+    fun runFunc(string: String, binary: File) {
+        linker.get(store, binary.name, string).get().func().use { f ->
+            val fn: Consumer0 = WasmFunctions.consumer(store, f)
+            fn.accept()
+        }
+    }
 
 
     fun runEnvironment(bindings: Any, vararg plugins: File) {
@@ -72,6 +80,7 @@ object WebAssembly {
 
         plugins[module] = binary.name
 
+        modules.add(binary)
         linker.get(store, binary.name, "on_enable").get().func().use { f ->
             val fn: Consumer0 = WasmFunctions.consumer(store, f)
             fn.accept()
